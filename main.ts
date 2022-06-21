@@ -1,3 +1,11 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
+    radio.sendString("A")
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("B")
+    radio.sendString("B")
+})
 radio.setGroup(168)
 pins.setPull(DigitalPin.P13, PinPullMode.PullNone)
 pins.setPull(DigitalPin.P14, PinPullMode.PullNone)
@@ -11,8 +19,8 @@ basic.forever(function () {
         basic.showString("G")
         radio.sendString("G")
     } else if (pins.digitalReadPin(DigitalPin.P16) == 0) {
-        basic.showString("B")
-        radio.sendString("B")
+        basic.showString("Bl")
+        radio.sendString("Bl")
     } else if (pins.digitalReadPin(DigitalPin.P14) == 0) {
         basic.showString("Y")
         radio.sendString("Y")
