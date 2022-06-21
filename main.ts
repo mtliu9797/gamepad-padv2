@@ -29,8 +29,8 @@ basic.forever(function () {
             basic.showString("^")
             radio.sendString("^")
         } else if (pins.analogReadPin(AnalogPin.P2) < 450 && (pins.analogReadPin(AnalogPin.P1) > 450 && pins.analogReadPin(AnalogPin.P1) < 550)) {
-            basic.showString("V")
-            radio.sendString("V")
+            basic.showString("v")
+            radio.sendString("v")
         } else if (pins.analogReadPin(AnalogPin.P1) < 450 && (pins.analogReadPin(AnalogPin.P2) > 450 && pins.analogReadPin(AnalogPin.P2) < 550)) {
             basic.showString("<")
             radio.sendString("<")
